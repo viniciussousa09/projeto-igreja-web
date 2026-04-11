@@ -19,7 +19,7 @@ export default function Galeria() {
   const fotosGaleria = [
     { id: 1, src: foto1, alt: "Momento de Culto - Igreja Batista Novas de Paz" },
     { id: 2, src: foto2, alt: "Comunhão" },
-    { id: 3, src: foto3, alt: "Pator Rodrigo ministrando a palavra" },
+    { id: 3, src: foto3, alt: "Pastor Rodrigo ministrando a palavra" },
     { id: 4, src: foto4, alt: "Irmão Samuel ministrando a palavra" },
     { id: 5, src: foto5, alt: "Equipe de louvor" },
     { id: 6, src: foto6, alt: "Thallys baterista" },

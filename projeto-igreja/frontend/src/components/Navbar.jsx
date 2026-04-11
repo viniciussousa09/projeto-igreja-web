@@ -30,10 +30,10 @@ export default function Navbar() {
           
           <div className="h-6 w-px bg-gray-300 mx-2"></div>
 
-          <a href="https://instagram.com/suaigreja" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-purple-700 transition-colors flex items-center">
+          <a href="https://www.instagram.com/ibnovasdepaz/" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-purple-700 transition-colors flex items-center">
             <FaInstagram className="text-2xl" />
           </a>
-          <a href="https://youtube.com/suaigreja" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-red-600 transition-colors flex items-center">
+          <a href="https://www.youtube.com/@IBNP-3" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-red-600 transition-colors flex items-center">
             <FaYoutube className="text-3xl" />
           </a>
 

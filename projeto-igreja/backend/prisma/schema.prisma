@@ -1,0 +1,31 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// Modelo da Tabela de Pedidos de oração
+model PedidoOracao {
+  id        String   @id @default(uuid())
+  nome      String
+  mensagem  String
+  lido      Boolean @default(false)
+  data      DateTime @default(now())
+}
+
+// Modelo da tabela de eventos
+model Evento {
+  id        String   @id @default(uuid())
+  titulo    String
+  data      String
+  descricao String
+  imagemUrl String?  // O '?' significa que a foto é opcional
+  createdAt DateTime @default(now())
+}

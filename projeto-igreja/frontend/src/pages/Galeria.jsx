@@ -18,14 +18,14 @@ export default function Galeria() {
   // 2. LISTA ATUALIZADA COM AS 9 FOTOS
   const fotosGaleria = [
     { id: 1, src: foto1, alt: "Momento de Culto - Igreja Batista Novas de Paz" },
-    { id: 2, src: foto2, alt: "Louvor e Adoração" },
-    { id: 3, src: foto3, alt: "Trabalho Social na Comunidade" },
-    { id: 4, src: foto4, alt: "Crianças no Ministério Infantil" },
-    { id: 5, src: foto5, alt: "Batismo nas Águas" },
-    { id: 6, src: foto6, alt: "Confraternização dos Irmãos" },
-    { id: 7, src: foto7, alt: "Culto da Família" },
-    { id: 8, src: foto8, alt: "Momentos de Oração e Intercessão" },
-    { id: 9, src: foto9, alt: "Nossa Comunidade" },
+    { id: 2, src: foto2, alt: "Comunhão" },
+    { id: 3, src: foto3, alt: "Pator Rodrigo ministrando a palavra" },
+    { id: 4, src: foto4, alt: "Irmão Samuel ministrando a palavra" },
+    { id: 5, src: foto5, alt: "Equipe de louvor" },
+    { id: 6, src: foto6, alt: "Thallys baterista" },
+    { id: 7, src: foto7, alt: "PG na Casa da irmã Therezinha" },
+    { id: 8, src: foto8, alt: "PG na casa dos irmãos Vinicius e Lais" },
+    { id: 9, src: foto9, alt: "Culto de /jovens na PIB Baeta Neves" },
   ];
 
   return (

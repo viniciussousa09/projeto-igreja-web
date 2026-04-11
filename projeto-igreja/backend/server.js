@@ -13,7 +13,6 @@ const { PrismaPg } = require('@prisma/adapter-pg');
 
 // Inicializando o Aplicativo Express
 const app = express();
-const PORT = 3000; //Porta onde o servidor vai rodar
 
 // 2. Configurando o "Tradutor" (Pool de conexões)
 const connectionString = process.env.DATABASE_URL;
@@ -145,6 +144,9 @@ app.delete('/api/eventos/:id', async (req, res) => {
 });
 
 // Ligando o servidor para escutar as requisições na porta definida
+// Ele tenta pegar a porta do Render. Se não achar, usa a 5000 como segurança.
+const PORT = process.env.PORT || 5000;
+
 app.listen(PORT, () => {
-    console.log(`🚀 Servidor rodando na porta ${PORT}`);
+  console.log(`Servidor rodando perfeitamente na porta ${PORT}`);
 });

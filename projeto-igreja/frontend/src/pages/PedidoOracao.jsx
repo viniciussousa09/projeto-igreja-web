@@ -12,7 +12,7 @@ export default function PedidoOracao() {
 
         try {
             // 2. Usamos o fetch (e o seu palpite, o await!) para fazer o POST
-            const resposta = await fetch('http://localhost:3000/api/pedidos', {
+            const resposta = await fetch('http://localhost:5000/api/pedidos', {
                 method: 'POST', // O mesmo método que usamos no Thunder Client
                 headers: {
                     'Content-Type': 'application/json' // Avisamos o servidor que o pacote é um JSON

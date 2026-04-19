@@ -21,7 +21,7 @@ export default function GerenciarEventos() {
         const novoEvento = { titulo, data, descricao, imagemUrl };
 
         try {
-            const res = await fetch('http://localhost:3000/api/eventos', {
+            const res = await fetch('http://localhost:5000/api/eventos', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(novoEvento)

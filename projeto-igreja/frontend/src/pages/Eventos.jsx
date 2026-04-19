@@ -7,7 +7,7 @@ export default function Eventos() {
     const isAdmin = localStorage.getItem('isAdmin') === 'true';
 
     useEffect(() => {
-        fetch('http://localhost:3000/api/eventos')
+        fetch('http://localhost:5000/api/eventos')
             .then(res => res.json())
             .then(dados => setEventos(dados))
             .catch(erro => console.error("Erro ao buscar eventos:", erro));
@@ -19,7 +19,7 @@ export default function Eventos() {
 
         if (confirmacao) {
             try {
-                const resposta = await fetch(`http://localhost:3000/api/eventos/${idParaApagar}`, {
+                const resposta = await fetch(`http://localhost:5000/api/eventos/${idParaApagar}`, {
                     method: 'DELETE',
                 });
 

@@ -53,7 +53,7 @@ export default function Mural() {
         <p className="text-gray-500 italic">Nenhum pedido de oração ainda. Seja o primeiro!</p>
       ) : (
         <div className="flex flex-col gap-4">
-          {pedidos.map((pedido) => (
+          {pedidos?.map((pedido) => (
 
             // Layout do Card atualizado com o botão
             <div key={pedido.id} className="bg-white p-4 rounded-lg shadow border border-gray-200 flex justify-between items-start">

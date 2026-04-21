@@ -44,7 +44,7 @@ export default function Eventos() {
                 <p className="text-center text-gray-500 bg-white p-8 rounded-lg shadow">Não há eventos agendados no momento.</p>
             ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {eventos.map(evento => (
+                    {eventos?.map(evento => (
                         <div key={evento.id} className="bg-white rounded-xl shadow-lg overflow-hidden border-t-4 border-purple-700 flex flex-col justify-between">
                             <div>
                                 {evento.imagemUrl && <img src={evento.imagemUrl} className="w-full h-48 object-cover" />}

@@ -1,7 +1,5 @@
 import { useState } from 'react';
 
-// 1. IMPORTANDO AS 9 FOTOS REAIS
-// (Certifique-se de que os arquivos estão salvos com esses nomes exatos na pasta assets/galeria/)
 import foto1 from '../assets/galeria/galeria-1.jpg';
 import foto2 from '../assets/galeria/galeria-2.jpg';
 import foto3 from '../assets/galeria/galeria-3.jpg';
@@ -11,6 +9,9 @@ import foto6 from '../assets/galeria/galeria-6.jpg';
 import foto7 from '../assets/galeria/galeria-7.jpg';
 import foto8 from '../assets/galeria/galeria-8.jpg';
 import foto9 from '../assets/galeria/galeria-9.jpg';
+import foto10 from '../assets/galeria/galeria-10.jpg';
+import foto11 from '../assets/galeria/galeria-11.jpg';
+import foto12 from '../assets/galeria/galeria-12.jpg';
 
 export default function Galeria() {
   const [fotoAmpliada, setFotoAmpliada] = useState(null);
@@ -25,7 +26,10 @@ export default function Galeria() {
     { id: 6, src: foto6, alt: "Thallys baterista" },
     { id: 7, src: foto7, alt: "PG na Casa da irmã Therezinha" },
     { id: 8, src: foto8, alt: "PG na casa dos irmãos Vinicius e Lais" },
-    { id: 9, src: foto9, alt: "Culto de /jovens na PIB Baeta Neves" },
+    { id: 9, src: foto9, alt: "Culto de jovens na PIB Baeta Neves" },
+    { id: 10, src: foto10, alt: "Encontro de Mulheres" },
+    { id: 11, src: foto11, alt: "PG na casa da irmã Therezinha" },
+    { id: 12, src: foto12, alt: "Encontro dos Homens" },
   ];
 
   return (

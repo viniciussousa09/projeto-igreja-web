@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+import Agenda from './pages/Agenda';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import QuemSomos from './pages/QuemSomos';
@@ -25,6 +26,7 @@ function App() {
       <main className="min-h-screen bg-gray-50 pt-8">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/agenda" element={<Agenda />} />
           <Route path="/quem-somos" element={<QuemSomos />} />
           <Route path="/pastores" element={<Pastores />} />
           <Route path="/pedido-oracao" element={<PedidoOracao />} />

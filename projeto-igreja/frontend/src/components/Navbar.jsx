@@ -22,6 +22,7 @@ export default function Navbar() {
         <div className="hidden lg:flex gap-6 font-medium items-center text-gray-700">
           <Link to="/" className="hover:text-purple-700 transition-colors">Início</Link>
           <Link to="/quem-somos" className="hover:text-purple-700 transition-colors">Quem Somos</Link>
+          <Link to="/agenda" className="hover:text-purple-700 transition-colors">Agenda</Link>
           <Link to="/pastores" className="hover:text-purple-700 transition-colors">Pastores</Link>
           <Link to="/ministerios" className="hover:text-purple-700 transition-colors">Ministérios</Link>
           <Link to="/galeria" className="hover:text-purple-700 transition-colors">Galeria</Link>

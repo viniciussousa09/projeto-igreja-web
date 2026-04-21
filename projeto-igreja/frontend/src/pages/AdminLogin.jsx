@@ -10,7 +10,7 @@ export default function AdminLogin() {
         evento.preventDefault();
 
         try {
-            const resposta = await fetch('http://localhost:5000/api/login', {
+            const resposta = await fetch('https://igreja-backend-qbex.onrender.com/api/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

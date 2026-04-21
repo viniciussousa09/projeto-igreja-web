@@ -9,7 +9,7 @@ export default function Mural() {
   useEffect(() => {
     const buscarPedidos = async () => {
       try {
-        const resposta = await fetch('http://localhost:5000/api/pedidos');
+        const resposta = await fetch('https://igreja-backend-qbex.onrender.com/api/pedidos');
         const dados = await resposta.json();
         setPedidos(dados);
       } catch (erro) {
@@ -27,7 +27,7 @@ export default function Mural() {
     if (confirmacao) {
       try {
         // Chamamos a nossa rota DELETE, passando o ID na URL
-        const resposta = await fetch(`http://localhost:5000/api/pedidos/${idParaApagar}`, {
+        const resposta = await fetch(`https://igreja-backend-qbex.onrender.com/api/pedidos/${idParaApagar}`, {
           method: 'DELETE',
         });
 

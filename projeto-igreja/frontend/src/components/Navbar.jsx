@@ -65,8 +65,8 @@ export default function Navbar() {
 
           {/* Redes Sociais no Celular */}
           <div className="flex justify-center gap-8 py-6 border-b border-gray-100">
-            <a href="https://instagram.com/suaigreja" target="_blank" rel="noreferrer" className="text-purple-700 text-4xl"><FaInstagram /></a>
-            <a href="https://youtube.com/suaigreja" target="_blank" rel="noreferrer" className="text-red-600 text-4xl"><FaYoutube /></a>
+            <a href="https://www.instagram.com/ibnovasdepaz/" target="_blank" rel="noreferrer" className="text-purple-700 text-4xl"><FaInstagram /></a>
+            <a href="https://www.youtube.com/@IBNP-3" target="_blank" rel="noreferrer" className="text-red-600 text-4xl"><FaYoutube /></a>
           </div>
 
           {/* Botões de Ação no Celular */}

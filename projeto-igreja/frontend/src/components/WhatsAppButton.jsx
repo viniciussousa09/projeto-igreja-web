@@ -5,7 +5,7 @@ export default function WhatsAppButton() {
   const numeroWhatsApp = "5511982646391"; 
   
   // 2. Mensagem automática que já vem preenchida quando a pessoa clica
-  const mensagem = "A Paz do Senhor! Gostaria de falar com a Igreja Batista Novas de Paz.";
+  const mensagem = "Graça e paz! Gostaria de falar com a Igreja Batista Novas de Paz.";
   
   // link oficial da API do WhatsApp
   const linkZap = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logoIgreja from '../assets/logo.png'; 
+import logoIgreja from '../assets/logo.png';
 import { FaInstagram, FaYoutube, FaBars, FaTimes } from 'react-icons/fa';
 
 export default function Navbar() {
@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <nav className="bg-white shadow-md border-b-4 border-green-500 sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 py-2 flex justify-between items-center relative z-50 bg-white">
-        
+
         {/* A Sua Logo Oficial */}
         <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
           <img src={logoIgreja} alt="Logo Igreja Batista Novas de Paz" className="h-26 object-contain" />
@@ -28,7 +28,7 @@ export default function Navbar() {
           <Link to="/galeria" className="hover:text-purple-700 transition-colors">Galeria</Link>
           <Link to="/eventos" className="hover:text-purple-700 transition-colors">Eventos</Link>
           <Link to="/mural" className="hover:text-purple-700 transition-colors">Mural</Link>
-          
+
           <div className="h-6 w-px bg-gray-300 mx-2"></div>
 
           <a href="https://www.instagram.com/ibnovasdepaz/" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-purple-700 transition-colors flex items-center">
@@ -39,12 +39,12 @@ export default function Navbar() {
           </a>
 
           <div className="h-6 w-px bg-gray-300 mx-2"></div>
-          
+
           <Link to="/pedido-oracao" className="text-green-600 border border-green-600 px-5 py-2 rounded-full hover:bg-green-50 transition-colors text-sm whitespace-nowrap">Pedir Oração</Link>
           <Link to="/doacoes" className="bg-purple-700 text-white px-5 py-2 rounded-full shadow hover:bg-purple-800 transition-colors text-sm">Doar</Link>
         </div>
 
-        <button 
+        <button
           className="lg:hidden text-3xl text-green-600 focus:outline-none"
           onClick={() => setMenuAberto(!menuAberto)}
         >

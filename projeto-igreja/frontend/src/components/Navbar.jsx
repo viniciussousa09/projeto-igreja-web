@@ -21,7 +21,7 @@ export default function Navbar() {
 
         <div className="hidden lg:flex gap-6 font-medium items-center text-gray-700">
           <Link to="/" className="hover:text-purple-700 transition-colors">Início</Link>
-          <Link to="/quem-somos" className="hover:text-purple-700 transition-colors">Quem Somos</Link>
+          <Link to="/quem-somos" className="hover:text-purple-700 transition-colors whitespace-nowrap">Sobre Nós</Link>
           <Link to="/agenda" className="hover:text-purple-700 transition-colors">Agenda</Link>
           <Link to="/pastores" className="hover:text-purple-700 transition-colors">Pastores</Link>
           <Link to="/ministerios" className="hover:text-purple-700 transition-colors">Ministérios</Link>
@@ -40,7 +40,7 @@ export default function Navbar() {
 
           <div className="h-6 w-px bg-gray-300 mx-2"></div>
           
-          <Link to="/pedido-oracao" className="text-green-600 border border-green-600 px-4 py-2 rounded-full hover:bg-green-50 transition-colors text-sm">Pedir Oração</Link>
+          <Link to="/pedido-oracao" className="text-green-600 border border-green-600 px-5 py-2 rounded-full hover:bg-green-50 transition-colors text-sm whitespace-nowrap">Pedir Oração</Link>
           <Link to="/doacoes" className="bg-purple-700 text-white px-5 py-2 rounded-full shadow hover:bg-purple-800 transition-colors text-sm">Doar</Link>
         </div>
 
@@ -57,7 +57,8 @@ export default function Navbar() {
       {menuAberto && (
         <div className="lg:hidden absolute top-full left-0 w-full bg-white border-t border-gray-100 shadow-xl flex flex-col px-6 py-4 animate-fade-in-up z-40">
           <Link to="/" onClick={fecharMenu} className="py-3 border-b border-gray-100 text-gray-700 font-medium hover:text-green-600">Início</Link>
-          <Link to="/quem-somos" onClick={fecharMenu} className="py-3 border-b border-gray-100 text-gray-700 font-medium hover:text-green-600">Quem Somos</Link>
+          <Link to="/quem-somos" onClick={fecharMenu} className="py-3 border-b border-gray-100 text-gray-700 font-medium hover:text-green-600">Sobre Nós</Link>
+          <Link to="/agenda" onClick={fecharMenu} className="py-3 border-b border-gray-100 text-gray-700 font-medium hover:text-green-600">Agenda</Link>
           <Link to="/pastores" onClick={fecharMenu} className="py-3 border-b border-gray-100 text-gray-700 font-medium hover:text-green-600">Pastores</Link>
           <Link to="/ministerios" onClick={fecharMenu} className="py-3 border-b border-gray-100 text-gray-700 font-medium hover:text-green-600">Ministérios</Link>
           <Link to="/galeria" onClick={fecharMenu} className="py-3 border-b border-gray-100 text-gray-700 font-medium hover:text-green-600">Galeria</Link>
